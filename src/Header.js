@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Header.css'
-
+import PageTitle from './PageTitle'
 class Header extends Component {
     render() {
         return (
@@ -15,10 +15,11 @@ class Header extends Component {
               <a href="#">Log in</a>
             </div>
           </div>
-          <div className="headline text-center small-12 columns">
+          {/*<div className="headline text-center small-12 columns">
             <h1>The Dwarf Underground</h1>
             <h3>Delving deep for the <span className="gold">shiniest</span> news</h3>
-          </div>
+          </div>*/}
+          <PageTitle />
         </div>
 
         )
