@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Ad.css'
+import './App.css'
 
 class Ad extends Component {
     render() {
