@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-
+import Comments from './Comments'
 class ArticleLinks extends Component {
     constructor(props){
       super(props)
@@ -16,7 +16,8 @@ class ArticleLinks extends Component {
       ev.preventDefault()
       this.setState({
         showComments: !this.state.showComments
-      }, () => console.log(this.state))
+      //}, () => console.log(this.state))
+      })
     }
     
     render() {
@@ -31,7 +32,7 @@ class ArticleLinks extends Component {
                 <i className="fa fa-share"></i>
                 <span className="article-link-text">Share Post</span>
               </a>
-              {this.state.showComments ? <div>Comments enabled</div> : null}
+              {this.state.showComments ? <Comments /> : null}
             </div>
         )
     }
