@@ -32,7 +32,7 @@ class Comments extends Component {
     render(){
         return (
             <div>
-                <textarea placeholder="Enter a comment" value={this.state.comment} onChange={this.handleChange}></textarea>
+               <textarea placeholder="Enter a comment" value={this.state.comment} onChange={this.handleChange}></textarea>
                 <button className="button" onClick={this.addComment}>Submit Comment</button>
                 {this.state.comments.map((comment, i) => <Comment key={i} comment={comment} />)}
             </div>
