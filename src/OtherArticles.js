@@ -52,9 +52,9 @@ class OtherArticles extends Component {
         )
     }
 
-    renderOtherArticle(article) {
+    renderOtherArticle(article, i ) {
       return (
-        <div className="small-6 medium-3 columns other-article">
+        <div key={i} className="small-6 medium-3 columns other-article">
            <a href={article.href}>
             <img src={article.src} alt={article.alt} />
              <p>{article.p}</p>
